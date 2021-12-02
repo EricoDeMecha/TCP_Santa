@@ -10,7 +10,7 @@ int main(){
         std::string response = santa.readMessage(ec);
         std::cout << response << '\n';
         // process the floor message
-        size_t f_c = TCP_Santa::countFloors(response);
+        int f_c = TCP_Santa::countFloors(response);
         std::cout << f_c << '\n';
         // send the response to server
         santa.writeFloors(std::to_string(f_c), ec);

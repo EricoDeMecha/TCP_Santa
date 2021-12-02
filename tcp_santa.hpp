@@ -32,7 +32,7 @@ struct  TCP_Santa{
         }
         return r_message;
     }
-    static size_t countFloors(const std::string& floor_count){
+    static int countFloors(const std::string& floor_count){
         size_t count_up = boost::range::count(floor_count, '(');
         size_t count_down = boost::range::count(floor_count, ')');
         return count_up - count_down;
