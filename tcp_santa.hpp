@@ -35,7 +35,7 @@ struct  TCP_Santa{
     static int countFloors(const std::string& floor_count){
         size_t count_up = boost::range::count(floor_count, '(');
         size_t count_down = boost::range::count(floor_count, ')');
-        return count_up - count_down;
+        return count_down - count_up;
     }
     void writeFloors(std::basic_string<char> message, boost::system::error_code& ec){
         socket.write_some(boost::asio::buffer(message.data(), message.size()), ec);
