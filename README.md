@@ -19,7 +19,7 @@ sudo apt install build-essential cmake ninja-build
 
 There an assistive build script to build the project.
 ```bash
-    chmod +a build.sh  && ./build.sh 
+    chmod +x build.sh  && ./build.sh 
 ```
 
 
