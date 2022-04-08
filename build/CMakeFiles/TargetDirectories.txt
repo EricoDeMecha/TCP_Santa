@@ -1,3 +1,0 @@
-/home/erico/Documents/c++/TCP_Santa/build/CMakeFiles/TCPSanta.dir
-/home/erico/Documents/c++/TCP_Santa/build/CMakeFiles/edit_cache.dir
-/home/erico/Documents/c++/TCP_Santa/build/CMakeFiles/rebuild_cache.dir
