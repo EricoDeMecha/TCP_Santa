@@ -1,26 +1,25 @@
 # TCP_Santa
-TCP Santa
-
+TCP Santa  project connects to a server via TCP protocol and reads a compressed string, parses the string while interpretting it based on the instructions given. It finally uploads the result to the server and waits for a response.
 ## Dependencies
-* C++ Boost version 1.65+
+* C++ Boost - *Version specified in ```conanfile.txt```*
+
 ## Setup
-Build essentials
+This project's packages are managed using conan. 
+
 ```bash
-sudo apt-get install build-essential cmake make
+pip install --user conan
 ```
-Boost dev. (Ubuntu 18.04 comes with 1.65+)
-```
-sudo apt-get install libboost-all-dev
+
+The project also uses cmake and ninja generators.
+```bash
+sudo apt install build-essential cmake ninja-build 
 ```
 
 ## Usage
-cmake & make 
+
+There an assistive build script to build the project.
 ```bash
-cd <dir> && cmake && make 
-```
-g++
-```bash
-g++ main.cpp -lboost_system -o exec && ./exec
+    chmod +a build.sh  && ./build.sh 
 ```
 
 
